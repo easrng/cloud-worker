@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
 const FetchEvent = require('./lib/FetchEvent');
+const { PushMessageData } = require("./lib/PushMessageData");
 const { Request } = require('node-fetch');
 const sandbox = new (require('./lib/sandbox'))();
 const debug = util.debuglog('cloud-worker');
